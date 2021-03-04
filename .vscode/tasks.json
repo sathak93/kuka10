@@ -1,0 +1,15 @@
+{
+    "tasks": [
+        {
+            "type": "colcon",
+            "args": [
+            
+                "build",
+                "--symlink-install"
+            ],
+            "group": "build",
+            "problemMatcher": [],
+            "label": "colcon: build"
+        }
+    ]
+}
