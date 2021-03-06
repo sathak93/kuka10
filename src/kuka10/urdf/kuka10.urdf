@@ -243,7 +243,7 @@
         <axis xyz="1 0 0" />
     </joint>
     
-<transmission name="trans_joint1">
+<!--transmission name="trans_joint1">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="joint1">
             <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -302,10 +302,61 @@
             <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
-    </transmission>
+    </transmission!-->
     <gazebo>
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
             <robotNamespace>/</robotNamespace>
         </plugin>
     </gazebo>
+    <ros2_control name="KukaPositionOnly" type="system">
+    <hardware>
+      <plugin>fake_robot_hardware/KukaHardware</plugin>
+      <param name="example_param_hw_start_duration_sec">2.0</param>
+      <param name="example_param_hw_stop_duration_sec">3.0</param>
+      <param name="example_param_hw_slowdown">2.0</param>
+    </hardware>
+    <joint name="joint1">
+      <command_interface name="position">
+        <param name="min">-1</param>
+        <param name="max">1</param>
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="joint2">
+      <command_interface name="position">
+        <param name="min">-1</param>
+        <param name="max">1</param>
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="joint3">
+      <command_interface name="position">
+        <param name="min">-1</param>
+        <param name="max">1</param>
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="joint4">
+      <command_interface name="position">
+        <param name="min">-1</param>
+        <param name="max">1</param>
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="joint5">
+      <command_interface name="position">
+        <param name="min">-1</param>
+        <param name="max">1</param>
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="joint6">
+      <command_interface name="position">
+        <param name="min">-1</param>
+        <param name="max">1</param>
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+  </ros2_control>
 </robot>
+
