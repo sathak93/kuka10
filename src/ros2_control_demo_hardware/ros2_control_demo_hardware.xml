@@ -1,6 +1,6 @@
 <library path="ros2_control_demo_hardware">
-  <class name="ros2_control_demo_hardware/RRBotSystemPositionOnlyHardware"
-         type="ros2_control_demo_hardware::RRBotSystemPositionOnlyHardware"
+  <class name="ros2_control_demo_hardware/KukaHardware"
+         type="ros2_control_demo_hardware::KukaHardware"
          base_class_type="hardware_interface::SystemInterface">
     <description>
       The ROS2 Control minimal robot protocol. This is example for start porting the robot from ROS 1.

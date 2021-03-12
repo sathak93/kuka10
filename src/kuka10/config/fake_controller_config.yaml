@@ -18,7 +18,7 @@ forward_command_controller_position:
         - joint4
         - joint5
         - joint6
-     interface_name: position
+    interface_name: position
 
 
       

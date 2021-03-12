@@ -34,11 +34,11 @@ using hardware_interface::return_type;
 
 namespace ros2_control_demo_hardware
 {
-class RRBotSystemPositionOnlyHardware : public
+class KukaHardware : public
   hardware_interface::BaseInterface<hardware_interface::SystemInterface>
 {
 public:
-  RCLCPP_SHARED_PTR_DEFINITIONS(RRBotSystemPositionOnlyHardware);
+  RCLCPP_SHARED_PTR_DEFINITIONS(KukaHardware);
 
   ROS2_CONTROL_DEMO_HARDWARE_PUBLIC
   return_type configure(const hardware_interface::HardwareInfo & info) override;
